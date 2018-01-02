@@ -1,0 +1,27 @@
+{
+	"bugs": {
+		"url": "https://github.com/bdsomer/vaxic-bpgen/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bdsomer/vaxic-bpgen.git"
+	},
+	"bin": {
+		"vaxic-bpgen": "index.js"
+	},
+	"scripts": {
+		"test": "echo It works, trust me."
+	},
+	"description": "Generate boilerplate Vaxic workspaces in seconds.",
+	"keywords": [
+		"vaxic",
+		"boilerplate",
+		"generator"
+	],
+	"author": "Bennett Somerville",
+	"name": "vaxic-bpgen",
+	"version": "0.0.1",
+	"main": "index.js",
+	"license": "MIT",
+	"homepage": "https://github.com/bdsomer/vaxic-bpgen#readme"
+}
