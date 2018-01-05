@@ -16,11 +16,9 @@ if (async !== -1) {
 mkdir(join(cwd, 'site'), (err) => {
 	if (err) {
 		if (err.errno === -17) {
-			// TODO make orange
-			console.log('[WARN] "site" directory already exists.')
+			console.log('\x1b[30m\x1b[43m[WARN]\x1b[0m \x1b[33mThe "site" directory already exists.\x1b[0m')
 		} else {
-			// TODO make red
-			console.error('[FATAL] an error occured while trying to create the "site" directory:')
+			console.error('\x1b[30m\x1b[41m[FATAL]\x1b[0m \x1b[31mAn error occured while trying to create the "site" directory:\x1b[0m')
 			console.error(err)
 			system.exit(-1)
 		}
@@ -53,8 +51,7 @@ app.add('DELETE', '/api/${currentEndpoint}', ${async}(req, res) => {
 	}
 	writeFile('site/serve.js', fileString, (err) => {
 		if (err) {
-			// TODO make red
-			console.error('[FATAL] an error occured while trying to write the "site/serve.js" file:')
+			console.error('\x1b[30m\x1b[41m[FATAL]\x1b[0m \x1b[31mAn error occured while trying to write the "site/serve.js" file:\x1b[0m')
 			console.error(err)
 			system.exit(-1)
 		}
