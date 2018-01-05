@@ -27,6 +27,8 @@ mkdir(join(cwd, 'site'), (err) => {
 	}
 	let fileString = `const Vaxic = require('Vaxic')
 const app = new Vaxic()
+
+app.use(Vaxic.static('host'))
 	
 `
 	for (let i = 0; i < endpoints.length; i++) {
